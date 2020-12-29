@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body
+{
+display: flex;
+flex-direction: column;
+}
+a
+{
+text-decoration:none;
+color: black;
+}
+header
+{
+  height:10vh;
+  background-color:lightgreen;
+  border:3px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius:7px;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: fantasy;
+}
+footer
+{
+  height:10vh;
+  background-color:lightgreen;
+  border:3px solid black;
+  border-radius:7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: fantasy; 
+}
+main
+{
+display: flex;
+flex-direction: row;
+flex-grow:1;
+}
+nav
+{
+/*display: flex;*/
+order:-1;
+border:3px solid black;
+flex-basis: 200px;
+flex-grow:1;
+height: 800px;
+background-color: antiquewhite;
+border-radius:7px;
+padding: 10px;
+font-size: 20px;
+font-family: fantasy;
+}
+article
+{
+border:3px solid black;
+flex-basis: 200px;
+flex-grow:4;
+height: 800px;
+background-color: lightgray;
+border-radius:7px;
+padding: 10px;
+font-size: 20px;
+font-family: fantasy;
+}
+aside
+{
+border:3px solid black;
+flex-basis: 200px;
+flex-grow:1;
+height: 800px;
+background-color: azure;
+border-radius:7px;
+padding: 10px;
+font-size: 20px;
+font-family: fantasy;
+}
+</style>
+</head>
+<body>
+<header>
+        <a href="#">Nav Left</a>
+        <a href="#">Nav Right</a>
+</header>
+        <main>
+            <article>Main Content</article>
+            <nav>Side Nav</nav>
+            <aside>Aside</aside>
+        </main>
+        <footer>
+            Footer
+        </footer>
+        </body>
+</html>
