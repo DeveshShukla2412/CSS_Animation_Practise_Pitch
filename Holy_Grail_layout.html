@@ -50,16 +50,15 @@ main
 {
 display: flex;
 flex-direction: row;
-flex-grow:1;
+min-height: 800px;
 }
 nav
 {
-/*display: flex;*/
 order:-1;
 border:3px solid black;
-flex-basis: 200px;
+flex-basis: 20%;
 flex-grow:1;
-height: 800px;
+/*min-height: 800px;*/
 background-color: antiquewhite;
 border-radius:7px;
 padding: 10px;
@@ -69,9 +68,9 @@ font-family: fantasy;
 article
 {
 border:3px solid black;
-flex-basis: 200px;
+flex-basis: 60%;
 flex-grow:4;
-height: 800px;
+/*min-height: 800px;*/
 background-color: lightgray;
 border-radius:7px;
 padding: 10px;
@@ -81,15 +80,26 @@ font-family: fantasy;
 aside
 {
 border:3px solid black;
-flex-basis: 200px;
+flex-basis: 20%;
 flex-grow:1;
-height: 800px;
 background-color: azure;
 border-radius:7px;
 padding: 10px;
 font-size: 20px;
 font-family: fantasy;
 }
+@media screen and (max-width:640px)
+{
+    main
+    {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+        nav
+    {
+        order: 0;
+    }
+            }
 </style>
 </head>
 <body>
